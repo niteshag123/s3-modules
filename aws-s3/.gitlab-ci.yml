@@ -1,0 +1,10 @@
+include:
+  - project: 'reference-data/refdata-aws-cicd'
+    file: 'tf-module.yml'
+
+variables:
+  TFSTATE_FILE: "refdata-s3-module.tfstate"
+  SKIP_DESTROY: "no"
+  SLEEP_BEFORE_CREATE: 0
+  SLEEP_BEFORE_CLEAN: 30
+  SLEEP_BEFORE_DESTROY: 30
